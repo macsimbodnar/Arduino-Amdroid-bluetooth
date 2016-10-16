@@ -46,6 +46,9 @@ public class ConnectedThread extends Thread {
                 // read bytes from input buffer //
                 bytes = mmInStream.read(buffer);
                 String readMessage = new String(buffer, 0, bytes);
+
+                Log.d(TAG, readMessage);
+
                 bluetoothIn.obtainMessage(Constants.MESSAGE_HANDLER_STATE, bytes, -1, readMessage).sendToTarget();
 
             } catch (IOException e) {

@@ -43,9 +43,9 @@ public class MainActivity extends Activity {
                     message += readMessage;
                 }
 
-                if(message.equals("Acceso")) {
+                if(message.equals("Led on")) {
                     Toast.makeText(getBaseContext(), message, Toast.LENGTH_SHORT).show();
-                } else if(message.equals("Spento")) {
+                } else if(message.equals("Led off")) {
                     Toast.makeText(getBaseContext(), message, Toast.LENGTH_SHORT).show();
                 }
 

@@ -58,7 +58,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Link the buttons and textViews to respective views //
         Button btnSend = (Button) findViewById(R.id.buttonSend);
 
         // get Bluetooth adapter //
